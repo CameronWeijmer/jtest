@@ -47,7 +47,7 @@ test("should render the Page component correctly", () => {
       screen.getByText(`${members.firstname} ${members.lastname}`)
     ).toBeInTheDocument(),
       expect(screen.getByText(`${members.position}`)).toBeInTheDocument(),
-      // expect(screen.getByText(`${members.age}`)).toBeInTheDocument();
-      expect(screen.getByText(`Not in Document`)).toBeInTheDocument();
+      expect(screen.getByText(`${members.age}`)).toBeInTheDocument();
+      // expect(screen.getByText(`Not in Document`)).toBeInTheDocument();
 }
 });
